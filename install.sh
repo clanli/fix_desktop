@@ -1,6 +1,8 @@
 
 
-# sudo apt install terminator filezille gdebi-core openjdk-8-jdk icedtea-netx menulibre alacarte -y 
+# sudo apt update
+# sudo apt upgrade
+# sudo apt install terminator filezille gdebi-core openjdk-8-jdk icedtea-netx menulibre alacarte build-essential git -y 
 # wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 # sudo gdebi google-chrome-stable_current_amd64.deb
 # rm -f google-chrome-stable_current_amd64.deb
