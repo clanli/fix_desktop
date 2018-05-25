@@ -1,12 +1,15 @@
 
 
-# sudo apt update
-# sudo apt upgrade
-# sudo apt install terminator filezille gdebi-core openjdk-8-jdk icedtea-netx menulibre alacarte build-essential git -y 
-# wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-# sudo gdebi google-chrome-stable_current_amd64.deb
-# rm -f google-chrome-stable_current_amd64.deb
-# sudo apt-get install chrome-gnome-shell gnome-tweak-tool gnome-shell-extensions
+lsof /var/lib/dpkg/lock >/dev/null 2>&1
+
+
+sudo apt update
+sudo apt upgrade -y
+sudo apt install terminator filezilla gdebi-core openjdk-8-jdk icedtea-netx menulibre alacarte build-essential git gdebi-core -y 
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb -y
+rm -f google-chrome-stable_current_amd64.deb
+sudo apt-get install chrome-gnome-shell gnome-tweak-tool gnome-shell-extensions -y
 
 
 
